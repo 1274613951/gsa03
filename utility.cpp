@@ -11,11 +11,31 @@
 // these functions
 
 bool isOdd(int x) { 
-  return false;  // REPLACE THIS STUB WITH REAL CODE
+  if(x % 2 != 0){
+	  return true;  // REPLACE THIS STUB WITH REAL CODE
+}else{
+	return false;
+}
 }
 bool isEven(int x) { 
-  return false;  // REPLACE THIS STUB WITH REAL CODE
+  if (x % 2 == 0){
+	  return true;
+  }
+  else{
+	  return false;
+  };  // REPLACE THIS STUB WITH REAL CODE
 }
 bool isPrime(int x) { 
-  return false;  // REPLACE THIS STUB WITH REAL CODE
-}
+  if (x<2){
+    return false;
+  }
+  else{
+    for (int i = 2; i < x; i++){
+      if (x % i == 0){
+        return false;
+      }
+    }
+    return true;
+  }
+};  
+
